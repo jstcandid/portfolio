@@ -26,7 +26,6 @@ export const Navbar = function () {
           className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
           onClick={(e) => {
             if (e.target.tagName === 'A') {
-              console.log(e.target);
               setMenuOpen(false);
             }
           }}
