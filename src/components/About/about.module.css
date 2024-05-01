@@ -1,0 +1,99 @@
+@import '../../vars.css';
+
+.container {
+  position: relative;
+  margin-top: 129px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 73px;
+  background-color: rgba(12, 12, 12, 0.6);
+  z-index: 1;
+  border-radius: 15px;
+}
+
+.title {
+  font-family: var(--font-outfit);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
+.content {
+  display: flex;
+
+  align-items: center;
+}
+
+.aboutImage {
+  width: 35%;
+}
+
+.aboutItems {
+  display: flex;
+  flex-direction: column;
+
+  gap: 50px;
+}
+
+.aboutItem {
+  display: flex;
+  cursor: default;
+  align-items: center;
+  border-radius: 20px;
+  list-style: none;
+  padding: 25px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(165, 215, 232, 0.42) 0,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transition: 0.4s;
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+}
+
+.aboutItem:hover {
+  background-size: 100% 100%;
+}
+
+.aboutItem img {
+  margin-right: 15px;
+}
+.aboutItemText {
+  color: var(--color-text);
+}
+
+.aboutItemText h5 {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.aboutItemText p {
+  font-size: 25px;
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+  .aboutImage {
+    display: none;
+  }
+
+  .aboutItems {
+    margin-top: 29px;
+  }
+
+  .aboutItem {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
