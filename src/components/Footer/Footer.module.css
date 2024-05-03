@@ -1,0 +1,91 @@
+@import '../../vars.css';
+
+.container {
+  color: var(--color-text);
+  margin-top: 120px;
+  background: var(--color-secondary);
+  display: flex;
+  flex-direction: row;
+  padding: 58px 10%;
+  justify-content: space-evenly;
+  width: 100vw;
+  gap: 10px;
+}
+
+.contactHeader {
+  font-size: 80px;
+
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.title {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+  gap: 26px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.contact a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  width: 100%;
+  overflow-wrap: break-word;
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    flex-direction: column;
+    gap: 23px;
+  }
+
+  .contactHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 9vw;
+  }
+
+  .text {
+    font-size: 6vw;
+  }
+
+  .contacts {
+    align-items: start;
+  }
+
+  .contact {
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .contact a {
+    font-size: 6vw;
+  }
+}
